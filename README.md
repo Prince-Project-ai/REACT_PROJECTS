@@ -2,7 +2,6 @@
 
 A collection of responsive React projects built with modern tools and best practices. This portfolio showcases various applications demonstrating frontend development skills.
 
-![Portfolio Screenshot](./assets/portfolio-screenshot.png)
 
 ## 🚀 Features
 
@@ -136,11 +135,3 @@ react-projects/
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👤 Author
-
-Your Name - [GitHub](https://github.com/yourusername) - [Portfolio](https://your-portfolio.com)
-
----
-
-*This portfolio was built with ❤️ using React and Tailwind CSS.*
