@@ -93,10 +93,6 @@ npm install
 npm run dev
 ```
 
-## 🌐 Live Demo
-
-Visit the live portfolio at: [https://your-portfolio-url.com](https://your-portfolio-url.com)
-
 ## 📱 Project Structure
 
 ```
