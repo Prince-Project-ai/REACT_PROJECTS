@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui;
+  --font-inter: Inter, sans-serif;
+  --font-mono: JetBrains Mono, ui-monospace, SFMono-Regular;
+  --font-display: Manrope, sans-serif;
+
+  --color-primary: rgb(9, 104, 255);
+  --color-secondary: rgb(255, 85, 105);
+  --color-accent: rgb(0, 230, 118);
+  --color-neutral: rgb(226, 232, 240);
+  --color-dark: #000000;
+  --color-muted: rgb(115, 115, 115);
+  --color-warning: rgb(255, 159, 10);
+  --color-error: rgb(255, 71, 87);
+  --color-info: rgb(88, 175, 223);
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(9, 104, 255);
+  --color-dark-gray: rgb(18, 18, 18);
+  --color-border-design: rgba(255, 255, 255, 0.06);
+}
+
+@layer utilities {
+  .bg-grid-slate-200 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(226 232 240 / 0.8)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+}
+
+body {
+  position: relative;
+  background-color: var(--color-dark);
+}
+
+.dark-tag {
+  @apply bg-white/20 text-white;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  inset: 0px;
+  pointer-events: none; /* Changed from 'all' to 'none' */
+  z-index: 1000;
+  height: 100%;
+  background-size: 128px;
+  background-repeat: repeat;
+  background-image: url("./assets/bg_2.png");
+  opacity: 0.2;
+  background-attachment: fixed;
+  border-radius: 0;
+}
+
+.header {
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: var(--framer-canvas-fixed-position, fixed);
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 50;
+}
+
+.sub_header {
+  backdrop-filter: blur(10px);
+  max-width: 100%;
+  width: 100%;
+  opacity: 1;
+}
